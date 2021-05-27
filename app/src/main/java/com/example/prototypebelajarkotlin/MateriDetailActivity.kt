@@ -3,9 +3,10 @@ package com.example.prototypebelajarkotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import com.example.prototypebelajarkotlin.base.BaseActivity
 import com.example.prototypebelajarkotlin.databinding.ActivityMateriDetailBinding
 import com.example.prototypebelajarkotlin.model.Materi
-import com.lintangprayogo.aplikasisidang.core.base.BaseActivity
+
 
 class MateriDetailActivity : BaseActivity<ActivityMateriDetailBinding>() {
     private lateinit var materi:Materi

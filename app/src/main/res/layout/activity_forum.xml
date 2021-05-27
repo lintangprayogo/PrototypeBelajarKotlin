@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".ForumActivity">
 
+
+    <include layout="@layout/custom_appbar" android:id="@+id/appBar"/>
+
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
@@ -77,7 +80,6 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_arrow_upward" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

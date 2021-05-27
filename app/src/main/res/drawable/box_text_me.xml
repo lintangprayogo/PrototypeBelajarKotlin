@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * Created by Faisal Amir
+ * 
+ * Name     : Muhammad Faisal Amir
+ * E-mail   : faisalamircs@gmail.com
+ * Github   : github.com/amirisback
+ * 
+ * Copyright (C) 2021 FrogoBox Inc.      
+ * All rights reserved
+ *
+ -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="4dp"/>
+    <solid android:color="@color/purple_700"/>
+</shape>

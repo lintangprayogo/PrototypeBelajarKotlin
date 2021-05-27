@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".JawabActivity">
 
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/custom_appbar" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
@@ -15,8 +18,7 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_arrow_upward"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/tv_title"
@@ -32,6 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.frogobox.recycler.widget.FrogoRecyclerView
+        android:id="@+id/frogoRV"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginLeft="16dp"
@@ -39,6 +42,8 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/box_edit_text"
+        android:clipToPadding="false"
+        android:paddingTop="16dp"
         app:layout_constraintBottom_toTopOf="@+id/linear_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,16 +69,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/box_edit_text"
+            android:hint="Jawab..."
             android:inputType="textPersonName"
             android:maxLines="1"
-            android:padding="16dp"
-            android:hint="Jawab..." />
+            android:padding="16dp" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/ic_arrow_upward"/>
+            android:src="@drawable/ic_arrow_upward" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

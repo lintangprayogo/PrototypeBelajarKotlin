@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".TanyaActivity">
 
+
+    <include layout="@layout/custom_appbar" android:id="@+id/appBar"/>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
@@ -14,8 +17,7 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_arrow_upward"/>
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
         android:id="@+id/tv_title"

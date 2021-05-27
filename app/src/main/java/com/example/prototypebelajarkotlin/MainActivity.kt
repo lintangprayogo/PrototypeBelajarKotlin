@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.prototypebelajarkotlin.adapter.SlideAdapter
 import com.example.prototypebelajarkotlin.adapter.SlideItem
+import com.example.prototypebelajarkotlin.base.BaseActivity
 import com.example.prototypebelajarkotlin.databinding.ActivityMainBinding
-import com.lintangprayogo.aplikasisidang.core.base.BaseActivity
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
     private lateinit var adapter: SlideAdapter
@@ -26,6 +26,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
            binding.materi.setOnClickListener {
                baseStartActivity<MateriActivity>()
            }
+        binding.forum.setOnClickListener {
+            baseStartActivity<ForumActivity>()
+        }
        binding.appBar.back.visibility= View.GONE
     }
 

@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.prototypebelajarkotlin.adapter.MateriAdapter
 import com.example.prototypebelajarkotlin.databinding.ActivityMateriBinding
 import com.example.prototypebelajarkotlin.model.Materi
-import com.lintangprayogo.aplikasisidang.core.base.BaseActivity
+import com.example.prototypebelajarkotlin.base.BaseActivity
 
 class MateriActivity : BaseActivity<ActivityMateriBinding>() {
     private lateinit var adapter:MateriAdapter

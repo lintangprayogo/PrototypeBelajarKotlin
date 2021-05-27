@@ -3,12 +3,10 @@ package com.example.prototypebelajarkotlin
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
-import com.example.prototypebelajarkotlin.core.BaseActivity
+import com.example.prototypebelajarkotlin.base.BaseActivity
 import com.example.prototypebelajarkotlin.databinding.ActivityForumBinding
 
-class ForumActivity : BaseActivity() {
-
-    private lateinit var binding: ActivityForumBinding
+class ForumActivity : BaseActivity<ActivityForumBinding>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,16 +19,16 @@ class ForumActivity : BaseActivity() {
     private fun setupUI() {
         binding.apply {
             ivJawab.setOnClickListener {
-                startActivity(Intent(this@ForumActivity, JawabActivity::class.java))
+                baseStartActivity<JawabActivity>()
             }
             tvJawab.setOnClickListener {
-                startActivity(Intent(this@ForumActivity, JawabActivity::class.java))
+                baseStartActivity<JawabActivity>()
             }
             ivTanya.setOnClickListener {
-                startActivity(Intent(this@ForumActivity, JawabActivity::class.java))
+                baseStartActivity<TanyaActivity>()
             }
             tvTanya.setOnClickListener {
-                startActivity(Intent(this@ForumActivity, JawabActivity::class.java))
+                baseStartActivity<TanyaActivity>()
             }
         }
     }

@@ -1,9 +1,11 @@
 @file:Suppress("DEPRECATION")
 
-package com.lintangprayogo.aplikasisidang.core.base
+package com.example.prototypebelajarkotlin.base
 
 import android.app.ProgressDialog
 import android.content.Intent
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
@@ -12,11 +14,31 @@ import com.google.gson.Gson
 
 
 abstract class BaseActivity<T : ViewBinding> : AppCompatActivity() {
+
     protected lateinit var binding: T
     protected lateinit var progressDialog: ProgressDialog
 
+    protected fun setupDetailActivity(titleApps: String) {
+        supportActionBar?.apply {
+            elevation = 0f
+            title = titleApps
+            setDisplayHomeAsUpEnabled(true)
+        }
+    }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        return super.onCreateOptionsMenu(menu)
+    }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 
     protected inline fun <reified Model> getExtraData(key: String): Model {
         val extraIntent = intent.getStringExtra(key)
