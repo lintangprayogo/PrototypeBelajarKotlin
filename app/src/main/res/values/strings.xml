@@ -9,4 +9,18 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="materi">Materi</string>
+    <string name="materi_detail">Materi Detail</string>
+    <string name="deskripsi_materi">Deskripsi Materi</string>
+    <string name="forum">Forum</string>
+    <string name="deskripsi_forum">Deskripsi Forum</string>
+    <string name="kotlin_apps">Kotlin Apps</string>
+    <string name="materi_1">MATERI #1</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and</string>
+    <string name="dummy_text_2">Kotlin adalah sebuah bahasa pemrograman dengan pengetikan statis yang berjalan pada mesin virtual java ataupun menggunakan kompiler LLVM yang dapat pula dikompilasikan kedalam bentuk source code JavaScript.</string>
+    <string name="quiz_fake">Kotlin adalah sebuah bahasa pemrograman yang berjalan pada...</string>
+    <string name="soal_1">Soal 1</string>
+    <string name="c">C++</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="java">Java</string>
 </resources>
