@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrototypeBelajarKotlin">
         <activity android:name=".QuizActivity"></activity>
+        <activity
+            android:name=".MateriDetailActivity"
+            android:theme="@style/Theme.PrototypeBelajarKotlin.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PrototypeBelajarKotlin.NoActionBar">
         <activity android:name=".TanyaActivity" />
         <activity android:name=".JawabActivity" />
         <activity android:name=".ForumActivity">
@@ -20,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".MateriActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.PrototypeBelajarKotlin.NoActionBar" />
     </application>
